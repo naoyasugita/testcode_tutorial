@@ -1,6 +1,6 @@
 import unittest
 
-from fizzbuzz import FizzBuzz
+from fizzbuzz import SampleProblem
 
 
 class TestFizzBuzz(unittest.TestCase):
@@ -8,20 +8,20 @@ class TestFizzBuzz(unittest.TestCase):
 
     def test_three_five(self) -> None:
         expected = "fizz"
-        fb = FizzBuzz(self.LOOP_COUNT, 3, 5)
-        actual = fb.fizzbuzz(12)
+        sp = SampleProblem(self.LOOP_COUNT, 3, 5)
+        actual = sp.fizzbuzz(12)
         self.assertEqual(expected, actual)
 
     def test_four_six(self) -> None:
         expected = "fizzbuzz"
-        fb = FizzBuzz(self.LOOP_COUNT, 4, 6)
-        actual = fb.fizzbuzz(24)
+        sp = SampleProblem(self.LOOP_COUNT, 4, 6)
+        actual = sp.fizzbuzz(24)
         self.assertEqual(expected, actual)
 
     def test_three_five(self) -> None:
         expected = 11
-        fb = FizzBuzz(self.LOOP_COUNT, 3, 5)
-        actual = fb.fizzbuzz(11)
+        sp = SampleProblem(self.LOOP_COUNT, 3, 5)
+        actual = sp.fizzbuzz(11)
         self.assertEqual(expected, actual)
 
 
