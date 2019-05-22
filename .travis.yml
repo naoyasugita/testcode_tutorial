@@ -9,3 +9,6 @@ install:
 
 script:
   - nosetests -v
+
+notifications:
+  slack: w1558532182-uqg171842:aN7LqPko7E4EEgwqCAKhxAeO
